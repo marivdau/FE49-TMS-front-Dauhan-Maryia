@@ -29,7 +29,6 @@
   font-weight: 900;
   font-size: $_24px;
   line-height: 1.166667;
-  text-transform: uppercase;
 }
 
 @mixin header_h5 {
@@ -49,7 +48,15 @@
 }
 
 @mixin button {
-  width: 23.125rem;
-  height: 5rem;
-  color: $red;
+  @include header_h4;
+  display: block;
+  border: $btn_color_normal;
+  width: 370px;
+  line-height: 80px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: auto;
+  background-color: $red;
+  color: $white;
+  transition: 0.9s;
 }
