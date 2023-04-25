@@ -1,0 +1,55 @@
+@mixin header_h1 {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 900;
+  font-size: $_64px;
+  line-height: 1.171875;
+  text-transform: uppercase;
+}
+
+@mixin header_h2 {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: $_36px;
+  line-height: 1.166667;
+}
+
+@mixin header_h3 {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: $_30px;
+  line-height: 1.166667;
+}
+
+@mixin header_h4 {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 900;
+  font-size: $_24px;
+  line-height: 1.166667;
+  text-transform: uppercase;
+}
+
+@mixin header_h5 {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-size: $_18px;
+  line-height: 1.166667;
+}
+
+@mixin header_h6 {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: $_13px;
+  line-height: 1.153846;
+}
+
+@mixin button {
+  width: 23.125rem;
+  height: 5rem;
+  color: $red;
+}
