@@ -8,10 +8,10 @@
 }
 
 @import "../scss/cdn";
-@import "../scss/var";
 @import "../scss/varFontSize";
+@import "../scss/var";
 @import "../scss/mixins";
-@import "../scss/banner.scss";
+@import "../scss/banner";
 
 html {
   font-family: "Raleway", sans-serif;
