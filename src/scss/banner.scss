@@ -54,7 +54,6 @@
 .nav-list {
   display: flex;
   justify-content: space-between;
-
 }
 
 .nav-list__item {
@@ -69,14 +68,18 @@
   text-transform: uppercase;
   // text-align: center;
   // border-bottom: 3px solid transparent;
-  padding-bottom: 41px;
+  padding-bottom: 40px;
   // position: relative;
 
   &:hover {
-    border-bottom: 3px solid $light_gray;   
+    border-bottom: $nav_border_hover;   
     // width: 134px;
     // display: inline;
     // position: absolute;
+  }
+
+  &:active {
+    border-bottom: $nav_border_active; 
   }
 }
 
@@ -86,7 +89,7 @@
 
 .banner-content__header {
   @include header_h1;
-  // max-width: 150px;
+  max-width: 1170px;
   color: $white;
   text-align: center;
   margin-bottom: 32px;

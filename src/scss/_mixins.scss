@@ -59,4 +59,15 @@
   background-color: $red;
   color: $white;
   transition: 0.9s;
+
+  &:hover {
+    background-color: $btn_color_hover;
+    border: $btn_color_hover;
+    transition: .9s;
+  }
+  
+  &:active {
+    box-shadow: 4px 4px 30px $red;  
+    transition: .9s;
+  }
 }
