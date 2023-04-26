@@ -1,0 +1,97 @@
+.contacts {
+  padding: 70px 0;
+  background-color: $blue;
+}
+
+.contacts-wrap {
+  margin: 0 -15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.contacts-location {
+  margin: 0 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts-location__heading {
+  @include header_h5;  
+  color: $white;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.contacts-location__address {
+  @include header_h5;  
+  color: $white;
+  text-align: center;
+}
+
+.contacts-social {
+  margin: 0 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts-social__heading {
+  @include header_h5;  
+  color: $white;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.contacts-social__icons-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+
+.contacts-social__icons-link {
+  @include social_link;
+  color: $gray;
+}
+
+.fa-facebook-f:hover {
+  color: $facebook_color;
+  transform: scale(2);
+}
+
+.fa-twitter:hover {
+  color: $twitter_color;
+  transform: scale(2);
+}
+
+.fa-linkedin:hover {
+  color: $linkedin_color;
+  transform: scale(2);
+}
+
+.contacts-about {
+  margin: 0 15px;
+  display: flex;
+  flex-direction: column;
+  width: 370px;
+}
+
+.contacts-about__heading {
+  @include header_h5;  
+  color: $white;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.contacts-about__text {
+  @include header_h5;  
+  color: $white;
+  text-align: center;
+  text-transform: capitalize;
+}
