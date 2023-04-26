@@ -71,3 +71,12 @@
     transition: .9s;
   }
 }
+
+@mixin social_link {
+  font-size: $_18px;
+  border: $social_icon_border;
+  width: 2.4375rem;
+  line-height: 2.4375rem;
+  display: block;
+  text-align: center;
+}
