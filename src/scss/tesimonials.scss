@@ -1,11 +1,10 @@
-.tesimonials {
-  padding: 0;
+.swiper {
+  height: 535px; 
 }
 
-.tesimonials-container {
-  max-width: none !important;
-  margin: 0 !important;
-  padding: 0 !important;
+.swiper-pagination-bullet {
+  color: $dusty_purple;
+  border: 8px solid $dusty_purple;
 }
 
 .testimonials-card {
@@ -15,7 +14,7 @@
 
   &:nth-child(even) {
     background-color: $blue;
-  }
+  } 
 }
 
 .testimonial-card__img {
@@ -33,8 +32,8 @@
 .testimonials-feedback {
   width: 472px;
   display: block;
-  text-align: center;
-  margin-left: 8%;
+  text-align: left;
+  transform: translate(30%, 0);
 }
 
 .testimonial-feedback__text {

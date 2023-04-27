@@ -5,6 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./scss/index.scss">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+/>
   <title>ActiveBOX</title>
 </head>
 <body>
@@ -56,21 +58,90 @@
 
   <section class="team"></section>
 
-  <section class="tesimonials">
-    <div class="container tesimonials-container">
-      <div class="testimonials-card">
-        <div class="testimonial-card__img">
-          <img src="./img/bgr_img_people.png" alt="#">
+  <section class="tesimonials">  
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="testimonials-card">
+            <div class="testimonial-card__img">
+              <img src="./img/bgr_img_people.png" alt="#">
+            </div>
+            <div class="testimonials-feedback">
+              <p class="testimonial-feedback__text">
+                “Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam...”
+              </p>
+              <p class="testimonial-feedback__author">
+                Susan Sims, Interaction Designer at XYZ
+              </p>
+            </div>
+          </div>
         </div>
-        <div class="testimonials-feedback">
-          <p class="testimonial-feedback__text">
-            “Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam...”
-          </p>
-          <p class="testimonial-feedback__author">
-            Susan Sims, Interaction Designer at XYZ
-          </p>
+
+        <div class="swiper-slide">
+          <div class="testimonials-card">
+            <div class="testimonial-card__img">
+              <img src="./img/cat.png" alt="#">
+            </div>
+            <div class="testimonials-feedback">
+              <p class="testimonial-feedback__text">
+                “Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam...”
+              </p>
+              <p class="testimonial-feedback__author">
+                Susan Sims, Interaction Designer at XYZ
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="testimonials-card">
+            <div class="testimonial-card__img">
+              <img src="./img/bread.png" alt="#">
+            </div>
+            <div class="testimonials-feedback">
+              <p class="testimonial-feedback__text">
+                “Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam...”
+              </p>
+              <p class="testimonial-feedback__author">
+                Susan Sims, Interaction Designer at XYZ
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="testimonials-card">
+            <div class="testimonial-card__img">
+              <img src="./img/painting.png" alt="#">
+            </div>
+            <div class="testimonials-feedback">
+              <p class="testimonial-feedback__text">
+                “Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam...”
+              </p>
+              <p class="testimonial-feedback__author">
+                Susan Sims, Interaction Designer at XYZ
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="testimonials-card">
+            <div class="testimonial-card__img">
+              <img src="./img/profile_2.png" alt="#">
+            </div>
+            <div class="testimonials-feedback">
+              <p class="testimonial-feedback__text">
+                “Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam...”
+              </p>
+              <p class="testimonial-feedback__author">
+                Susan Sims, Interaction Designer at XYZ
+              </p>
+            </div>
+          </div>
         </div>
       </div>
+      <div class="swiper-pagination"></div>
     </div>
   </section>
 
@@ -148,6 +219,7 @@
   </section>
 
   <script type="module" src="./js/app.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
 </body>
 </html>
