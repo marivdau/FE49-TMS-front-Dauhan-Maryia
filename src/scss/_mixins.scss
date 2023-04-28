@@ -79,4 +79,9 @@
   line-height: 2.4375rem;
   display: block;
   text-align: center;
+  color: $gray;
+}
+
+@mixin social_link_transfortm {
+  transform: scale(2);
 }

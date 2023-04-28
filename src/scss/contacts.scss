@@ -55,22 +55,21 @@
 
 .contacts-social__icons-link {
   @include social_link;
-  color: $gray;
 }
 
 .fa-facebook-f:hover {
+  @include social_link_transfortm;
   color: $facebook_color;
-  transform: scale(2);
 }
 
 .fa-twitter:hover {
+  @include social_link_transfortm;
   color: $twitter_color;
-  transform: scale(2);
 }
 
 .fa-linkedin:hover {
+  @include social_link_transfortm;
   color: $linkedin_color;
-  transform: scale(2);
 }
 
 .contacts-about {
