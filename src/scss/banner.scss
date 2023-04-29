@@ -36,13 +36,13 @@
     background: $light_gray;
     width: 1170px;
     height: 1px;
-    margin-bottom: -100px;
+    margin-bottom: -58px;
     position: absolute;
   }
 }
 
 .header-logo {
-  margin: 0 15px;
+  margin: 0 15px 35px;
 }
 
 .nav {
@@ -58,7 +58,6 @@
 
 .nav-list__item {
   width: 134px;
-  border-bottom: 3px solid transparent;
   text-align: center;
 }
 
@@ -66,16 +65,12 @@
   @include header_h6;
   color: $white;
   text-transform: uppercase;
-  // text-align: center;
-  // border-bottom: 3px solid transparent;
   padding-bottom: 40px;
-  // position: relative;
+  border-bottom: $nav_border_transparent;   
+  display: block;
 
   &:hover {
-    border-bottom: $nav_border_hover;   
-    // width: 134px;
-    // display: inline;
-    // position: absolute;
+    border-bottom: $nav_border_hover; 
   }
 
   &:active {
