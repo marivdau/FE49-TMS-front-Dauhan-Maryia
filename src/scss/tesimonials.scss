@@ -4,7 +4,15 @@
 
 .swiper-pagination-bullet {
   color: $dusty_purple;
-  border: 8px solid $dusty_purple;
+  width: 14px !important;
+  height: 14px !important;
+  border: 1px solid $dusty_purple;
+  background-color: $white !important;
+  margin-left: 20px !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: $dusty_purple !important;
 }
 
 .testimonials-card {
@@ -12,7 +20,7 @@
   align-items: center;
   background-color: $purple;
 
-  &:nth-child(even) {
+  &:nth-child(2n) {
     background-color: $blue;
   } 
 }
