@@ -5,4 +5,5 @@ const swiper = new Swiper('.swiper', {
     type: 'bullets',
     clickable: true,
   },
+  initialSlide: 2,
 });
