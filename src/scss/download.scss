@@ -6,6 +6,16 @@
     text-align: center;
     text-transform: capitalize;
     margin-bottom: 30px;
+
+    @media (max-width: 1024px) { 
+      @include header_h4;     
+      font-weight: 600; 
+    }
+
+    @media (max-width: 576px) { 
+      @include header_h5;     
+      font-weight: 600; 
+    }
   }
 
   .download-text {
@@ -14,10 +24,27 @@
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 47px;
+
+    @media (max-width: 1024px) { 
+      @include header_h4;     
+      font-size: 14px;
+    }
+
+    @media (max-width: 576px) { 
+      @include header_h6;      
+    }
   }
 
   .download-link {
     @include button;
     margin: auto;
+
+    @media (max-width: 1024px) { 
+      @include button_media_tablet;      
+    }
+    
+    @media (max-width: 576px) { 
+      @include button_media_mobile;      
+    }
   }
 }

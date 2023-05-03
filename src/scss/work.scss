@@ -9,6 +9,10 @@
     width: 25%;
     position: relative;
     border: 2px solid $white;
+
+    @media (max-width: 768px) {  
+      width: 50%;
+    }
     
     .work-list__item-img {
       max-height: 340px;
@@ -45,12 +49,26 @@
           color: $white;
           margin-bottom: 36px;
           text-transform: uppercase;
+
+          @media (max-width: 1024px) {        
+            @include header_h5;
+            font-weight: 900;
+            margin-bottom: 12px;
+          }
+
+          @media (max-width: 576px) { 
+            margin-bottom: 4px;
+          }
         }
 
         .work-list__text {
           @include header_h5;
           color: $white;
           text-transform: capitalize;
+
+          @media (max-width: 1024px) {        
+           font-size: 14px;
+          }
         }
       }
     }

@@ -8,10 +8,19 @@
     justify-content: space-between;
     align-items: flex-start;
 
+    @media (max-width: 768px) {        
+      flex-direction: column;  
+      align-items: center;        
+    }
+
     .contacts-location {
       margin: 0 15px;
       display: flex;
       flex-direction: column;
+
+      @media (max-width: 768px) {
+        margin-bottom: 60px;  
+      }
 
       .contacts-location__heading {
         @include header_h5;
@@ -20,12 +29,20 @@
         text-transform: uppercase;
         text-align: center;
         margin-bottom: 30px;
+
+        @media (max-width: 1024px) { 
+          font-size: 14px;       
+        }
       }
 
       .contacts-location__address {
         @include header_h5;
         color: $white;
         text-align: center;
+        
+        @media (max-width: 1024px) { 
+          font-size: 14px;       
+        }
       }
     }
 
@@ -34,6 +51,14 @@
       display: flex;
       flex-direction: column;
 
+      @media (max-width: 1024px) { 
+        max-width: 280px;      
+      }
+
+      @media (max-width: 768px) {
+        margin-bottom: 60px;       
+      }
+
       .contacts-social__heading {
         @include header_h5;
         color: $white;
@@ -41,6 +66,10 @@
         text-transform: uppercase;
         text-align: center;
         margin-bottom: 48px;
+        
+        @media (max-width: 1024px) { 
+          font-size: 14px;       
+        }
       }
 
       .contacts-social__icons-list {
@@ -73,7 +102,11 @@
       margin: 0 15px;
       display: flex;
       flex-direction: column;
-      width: 370px;
+      max-width: 370px;
+
+      @media (max-width: 1024px) { 
+        max-width: 280px;      
+      }
 
       .contacts-about__heading {
         @include header_h5;
@@ -82,6 +115,10 @@
         text-transform: uppercase;
         text-align: center;
         margin-bottom: 30px;
+        
+        @media (max-width: 1024px) { 
+          font-size: 14px;       
+        }
       }
 
       .contacts-about__text {
@@ -89,6 +126,10 @@
         color: $white;
         text-align: center;
         text-transform: capitalize;
+        
+        @media (max-width: 1024px) { 
+          font-size: 14px;       
+        }
       }
     }
   }
