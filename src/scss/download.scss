@@ -1,23 +1,23 @@
 .download {
   padding: 117px 0;
-}
 
-.download-heading {
-  @include header_h3;
-  text-align: center;
-  text-transform: capitalize;
-  margin-bottom: 30px;
-}
+  .download-heading {
+    @include header_h3;
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+  }
 
-.download-text {
-  @include header_h5;
-  font-weight: 700;
-  text-align: center;
-  text-transform: uppercase;
-  margin-bottom: 47px;
-}
+  .download-text {
+    @include header_h5;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 47px;
+  }
 
-.download-link {
-  @include button;
-  margin: auto; 
+  .download-link {
+    @include button;
+    margin: auto;
+  }
 }

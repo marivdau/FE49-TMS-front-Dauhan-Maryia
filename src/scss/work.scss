@@ -4,54 +4,62 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
-}
 
-.work-list__item {
-  width: 350px;
-  position: relative;
-}
+  .work-list__item {
+    width: 25%;
+    position: relative;
+    margin: auto;
 
-.work-list__item-img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-}
+    .work-list__item-img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
 
-.work-list__overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  opacity: 0;
-  background: $bgr_red;
-  border: 0;
-  cursor: pointer;
-}
+    .work-list__overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      opacity: 0;
+      background: $bgr_red;
+      border: 0;
+      cursor: pointer;
+      height: 100%;
 
-.work-list__item-link {
-  display: block;
-  height: 100%;
-  text-align: center;
-}
+      .work-list__item-link {
+        // display: block;
+        height: 100%;
+        display: grid;
+        text-align: center;
+        justify-content: center;
 
-.work-list__item:hover .work-list__overlay {
-  opacity: 1;
-  transition: 0.9s;
-}
 
-.work-list__heading {
-  @include header_h4;
-  color: $white;
-  display: block;
-  padding-top: 120px;
-  margin-bottom: 36px;
-  text-transform: uppercase;
-}
+        .work-list__heading {
+          @include header_h4;
+          color: $white;
+          // display: block;
+          // padding-top: 120px;
+          display: grid;
+          align-items: center;
+          justify-content: center;
+          // margin-bottom: 36px;
+          text-transform: uppercase;
+        }
 
-.work-list__text {
-  @include header_h5;
-  color: $white;
-  display: block;
-  text-transform: capitalize; 
+        .work-list__text {
+          @include header_h5;
+          color: $white;
+          display: block;
+          text-transform: capitalize;
+        }
+      }
+    }
+  }
+
+  .work-list__item:hover .work-list__overlay {
+    opacity: 1;
+    transition: 1s;
+  }
 }

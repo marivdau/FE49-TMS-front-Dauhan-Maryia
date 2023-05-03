@@ -1,96 +1,95 @@
 .contacts {
   padding: 70px 0;
   background-color: $blue;
-}
 
-.contacts-wrap {
-  margin: 0 -15px;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-}
+  .contacts-wrap {
+    margin: 0 -15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
 
-.contacts-location {
-  margin: 0 15px;
-  display: flex;
-  flex-direction: column;
-}
+    .contacts-location {
+      margin: 0 15px;
+      display: flex;
+      flex-direction: column;
 
-.contacts-location__heading {
-  @include header_h5;  
-  color: $white;
-  font-weight: 700;
-  text-transform: uppercase;
-  text-align: center;
-  margin-bottom: 30px;
-}
+      .contacts-location__heading {
+        @include header_h5;
+        color: $white;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 30px;
+      }
 
-.contacts-location__address {
-  @include header_h5;  
-  color: $white;
-  text-align: center;
-}
+      .contacts-location__address {
+        @include header_h5;
+        color: $white;
+        text-align: center;
+      }
+    }
 
-.contacts-social {
-  margin: 0 15px;
-  display: flex;
-  flex-direction: column;
-}
+    .contacts-social {
+      margin: 0 15px;
+      display: flex;
+      flex-direction: column;
 
-.contacts-social__heading {
-  @include header_h5;  
-  color: $white;
-  font-weight: 700;
-  text-transform: uppercase;
-  text-align: center;
-  margin-bottom: 48px;
-}
+      .contacts-social__heading {
+        @include header_h5;
+        color: $white;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 48px;
+      }
 
-.contacts-social__icons-list {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+      .contacts-social__icons-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
 
-}
+        .contacts-social__icons-link {
+          @include social_link;
 
-.contacts-social__icons-link {
-  @include social_link;
-}
+          .fa-facebook-f:hover {
+            @include social_link_transform;
+            color: $facebook_color;
+          }
 
-.fa-facebook-f:hover {
-  @include social_link_transfortm;
-  color: $facebook_color;
-}
+          .fa-twitter:hover {
+            @include social_link_transform;
+            color: $twitter_color;
+          }
 
-.fa-twitter:hover {
-  @include social_link_transfortm;
-  color: $twitter_color;
-}
+          .fa-linkedin:hover {
+            @include social_link_transform;
+            color: $linkedin_color;
+          }
+        }
+      }
+    }
 
-.fa-linkedin:hover {
-  @include social_link_transfortm;
-  color: $linkedin_color;
-}
+    .contacts-about {
+      margin: 0 15px;
+      display: flex;
+      flex-direction: column;
+      width: 370px;
 
-.contacts-about {
-  margin: 0 15px;
-  display: flex;
-  flex-direction: column;
-  width: 370px;
-}
+      .contacts-about__heading {
+        @include header_h5;
+        color: $white;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 30px;
+      }
 
-.contacts-about__heading {
-  @include header_h5;  
-  color: $white;
-  font-weight: 700;
-  text-transform: uppercase;
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-.contacts-about__text {
-  @include header_h5;  
-  color: $white;
-  text-align: center;
-  text-transform: capitalize;
+      .contacts-about__text {
+        @include header_h5;
+        color: $white;
+        text-align: center;
+        text-transform: capitalize;
+      }
+    }
+  }
 }

@@ -1,22 +1,22 @@
 .footer {
   padding: 24px 0;
   background-color: $deep_blue;
-}
 
-.footer-copyright {
-  max-width: 370px;
-  margin: auto;
-  text-align: center;
-}
+  .footer-copyright {
+    max-width: 370px;
+    margin: auto;
+    text-align: center;
 
-.footer-copyright__text { 
-  @include header_h5;
-  color: $ordinary_gray;
-  text-align: center;
-  text-transform: capitalize;
-  margin: auto;
-}
+    .footer-copyright__text {
+      @include header_h5;
+      color: $ordinary_gray;
+      text-align: center;
+      text-transform: capitalize;
+      margin: auto;
 
-.footer-copyright__author {
-  color: $white;
+      .footer-copyright__author {
+        color: $white;
+      }
+    }
+  }
 }

@@ -65,9 +65,9 @@
     border: $btn_color_hover;
     transition: 0.9s;
   }
-  
+
   &:active {
-    box-shadow: 4px 4px 30px $red;  
+    box-shadow: 4px 4px 30px $red;
     transition: 0.9s;
   }
 }
@@ -82,6 +82,11 @@
   color: $gray;
 }
 
-@mixin social_link_transfortm {
+@mixin social_link_transform {
   transform: scale(2);
+
+  &:active {
+    transform: rotate(360deg);
+    transition: .8s;
+  }
 }
