@@ -3,12 +3,27 @@
 
   .team-wrap {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
+
+    @media (max-width: 1024px) { 
+      display: flex;
+      flex-wrap: wrap;    
+      align-items: flex-start;
+      justify-content: center;
+    }
 
     .team-card {
       width: 270px;
       margin: 0 15px;
+
+      @media (max-width: 1024px) { 
+        margin-bottom: 50px;
+
+        .team-card:last-child {
+          margin-bottom: 0;
+        }
+      }
 
       .team-card__img {
         margin-bottom: 30px;
@@ -24,6 +39,11 @@
         @include header_h4;
         text-transform: capitalize;
         margin-bottom: 5px;
+
+        @media (max-width: 1024px) { 
+          @include header_h5;  
+          font-weight: 700;
+        }
       }
 
       .team-card__position {
@@ -32,12 +52,20 @@
         color: $red;
         display: inline-block;
         margin-bottom: 18px;
+
+        @media (max-width: 1024px) { 
+          font-size: 14px;
+        }
       }
 
       .team-card__text {
         @include header_h5;
         color: $medium_gray;
         margin-bottom: 37px;
+
+        @media (max-width: 1024px) {  
+          font-size: 14px;
+        }
       }
 
       .team-card__icons-list {

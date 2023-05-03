@@ -90,3 +90,33 @@
     transition: .8s;
   }
 }
+
+@mixin button_media_tablet {
+  @include header_h5;
+  display: block;
+  border: $btn_color_normal;
+  width: 314px;
+  line-height: 80px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: auto;
+  background-color: $red;
+  color: $white;
+  transition: 0.9s;
+  font-weight: 900;
+}
+
+@mixin button_media_mobile {
+  @include header_h5;
+  display: block;
+  border: $btn_color_normal;
+  width: 280px;
+  line-height: 80px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: auto;
+  background-color: $red;
+  color: $white;
+  transition: 0.9s;
+  font-weight: 900;
+}
