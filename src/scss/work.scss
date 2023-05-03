@@ -8,10 +8,10 @@
   .work-list__item {
     width: 25%;
     position: relative;
-    margin: auto;
-
+    border: 2px solid $white;
+    
     .work-list__item-img {
-      height: 100%;
+      max-height: 340px;
       width: 100%;
       object-fit: cover;
     }
@@ -24,34 +24,32 @@
       bottom: 0;
       opacity: 0;
       background: $bgr_red;
-      border: 0;
       cursor: pointer;
       height: 100%;
 
       .work-list__item-link {
-        // display: block;
         height: 100%;
-        display: grid;
-        text-align: center;
+        width: 100%;
+        display: flex;
         justify-content: center;
+        align-items: center;
+        flex-direction: column;
 
+        &:active   {
+          transition: 1s;
+          background-color: $brg_dark_red;
+        }
 
         .work-list__heading {
           @include header_h4;
           color: $white;
-          // display: block;
-          // padding-top: 120px;
-          display: grid;
-          align-items: center;
-          justify-content: center;
-          // margin-bottom: 36px;
+          margin-bottom: 36px;
           text-transform: uppercase;
         }
 
         .work-list__text {
           @include header_h5;
           color: $white;
-          display: block;
           text-transform: capitalize;
         }
       }
