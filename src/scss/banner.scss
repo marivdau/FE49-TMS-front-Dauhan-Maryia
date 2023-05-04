@@ -38,7 +38,7 @@
         position: absolute;
 
         @media (max-width: 768px) {        
-            display: none;
+          display: none;
         }
       }
 
@@ -88,6 +88,7 @@
 
               &:active {
                 border-bottom: $nav_border_active;
+                color: $strong_red;
               }
             }
           }
