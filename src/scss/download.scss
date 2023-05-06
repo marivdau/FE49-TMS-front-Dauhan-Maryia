@@ -19,11 +19,14 @@
   }
 
   .download-text {
-    @include header_h5;
-    font-weight: 700;
-    text-align: center;
-    text-transform: uppercase;
     margin-bottom: 47px;
+
+    & p {
+      @include header_h5;
+      font-weight: 700;
+      text-align: center;
+      text-transform: uppercase;
+    }
 
     @media (max-width: 1024px) { 
       @include header_h4;     
