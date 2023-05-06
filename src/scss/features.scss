@@ -12,7 +12,7 @@
       display: flex;
       flex-wrap: wrap;    
       align-items: flex-start;
-      justify-content: center;
+      justify-content: space-evenly;
     }
 
     .features-card {
@@ -28,10 +28,28 @@
       .features-card__img {
         text-align: center;
         margin-bottom: 52px;
+
+        & img {
+          width: 100px;
+          height: 100px;
+          object-fit: cover;
+        }
+
+        @media (max-width: 1024px) { 
+          margin-bottom: 5px;
+        }
       }
 
       .features-card__heading {
         margin-bottom: 42px;
+        @include header_h4;
+        text-align: center;
+        text-transform: uppercase;
+
+        @media (max-width: 1024px) {        
+          @include header_h5;
+          font-weight: 900;
+        }
 
         @media (max-width: 1024px) {
           margin-bottom: 32px;
@@ -39,17 +57,6 @@
 
         @media (max-width: 768px) { 
           margin-bottom: 12px;
-        }
-
-        & h3 {
-          @include header_h4;
-          text-align: center;
-          text-transform: uppercase;
-
-          @media (max-width: 1024px) {        
-            @include header_h5;
-            font-weight: 900;
-          }
         }
       }
 
