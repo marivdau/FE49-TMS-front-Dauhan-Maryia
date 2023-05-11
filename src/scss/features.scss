@@ -1,5 +1,5 @@
 .features {
-  padding: 116px 0 28px 0;
+  padding: 116px 0 0;
 
   .features-wrap {
     display: flex;
@@ -18,11 +18,11 @@
     .features-card {
       margin: 0 15px;
       width: 300px;
-      margin-bottom: 88px;
+      margin-bottom: 100px;
 
       @media (max-width: 768px) { 
-        margin-bottom: 40px;
-        width: 280px;
+        margin-bottom: 60px;
+        width: 70%;
       }
 
       .features-card__img {
@@ -66,6 +66,10 @@
 
         @media (max-width: 1024px) { 
           font-size: 14px;
+        }
+
+        @media (max-width: 768px) { 
+          font-size: 18px;
         }
       }
     }
